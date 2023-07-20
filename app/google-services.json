@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "599856859231",
+    "project_id": "motiondetection3-85340",
+    "storage_bucket": "motiondetection3-85340.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599856859231:android:1c8e91be712033cadff3ea",
+        "android_client_info": {
+          "package_name": "com.example.motiondetection3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599856859231-3vmq0j3as2ll57et92ceeh8fdb8mssef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDS_hcug3N8puF3dbpDTvJ51aR4h95sMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599856859231-3vmq0j3as2ll57et92ceeh8fdb8mssef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
