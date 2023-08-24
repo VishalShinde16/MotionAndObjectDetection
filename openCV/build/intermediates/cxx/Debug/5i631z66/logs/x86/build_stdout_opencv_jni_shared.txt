@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\Ramesh Shinde\AndroidStudioProjects\MotionDetection3\openCV\.cxx\Debug\5i631z66\x86'
+ninja: no work to do.

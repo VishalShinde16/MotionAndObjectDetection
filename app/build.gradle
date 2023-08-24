@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.motiondetection3"
-        minSdk 21
+        minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -27,6 +27,14 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        mlModelBinding true
+    }
+
+    //by me
+//    aaptOptions {
+//        noCompress "yolov7_model_metadata.tflite"
+//    }
 }
 
 dependencies {
@@ -37,6 +45,11 @@ dependencies {
     implementation project(path: ':openCV')
     implementation 'com.google.firebase:firebase-database:20.1.0'
     implementation 'com.google.firebase:firebase-storage-ktx:20.2.1'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+//    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
+//    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+//    implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -48,6 +61,16 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-storage")
     implementation("com.google.firebase:firebase-database")
+
+    //by m
+    // Import tflite dependencies
+//    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly-SNAPSHOT'
+//    // The GPU delegate library is optional. Depend on it as needed.
+//    implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly-SNAPSHOT'
+//    implementation 'org.tensorflow:tensorflow-lite-support:0.0.0-nightly-SNAPSHOT'
+
+
+
 }
 
 apply plugin: 'com.android.application'

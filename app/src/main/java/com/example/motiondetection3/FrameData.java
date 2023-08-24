@@ -1,18 +1,21 @@
 package com.example.motiondetection3;
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
+
 public class FrameData {
 
     String ImgName,ImgUrl,Latitude,Longitude,DateTime;
+    List<String> Classes=new ArrayList<String>();
 
-    public FrameData() {
-    }
-
-    public FrameData(String imgName, String imgUrl, String latitude, String longitude, String dateTime) {
+    public FrameData(String imgName, String imgUrl, String latitude, String longitude, String dateTime, List<String> classes) {
         ImgName = imgName;
         ImgUrl = imgUrl;
         Latitude = latitude;
         Longitude = longitude;
         DateTime = dateTime;
+        Classes = classes;
     }
 
     public String getImgName() {
@@ -54,4 +57,9 @@ public class FrameData {
     public void setDateTime(String dateTime) {
         DateTime = dateTime;
     }
+
+    public List<String> getClasses(){return Classes;}
+
+    public void setClasses(List<String> classes){Classes = classes;}
+
 }
